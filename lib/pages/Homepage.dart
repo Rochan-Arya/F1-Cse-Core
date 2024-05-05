@@ -198,7 +198,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                   SizedBox(height: 65),
                   Text(
-                    ' Rochan Arya | Meyyapan ',
+                    ' Rochan Arya | Meyyappan L',
                     style: TextStyle(
                         color: Color.fromARGB(255, 121, 121, 121),
                         fontSize: 15),
