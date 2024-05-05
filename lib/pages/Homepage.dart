@@ -16,57 +16,57 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 0, 0, 0),
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              SafeArea(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 40),
-                      child: Container(
-                          height: 50,
-                          width: 50,
-                          child: Image.asset(
-                            'lib/icons/SRMlogo.jpg',
-                          )),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 50, left: 0),
-                      child: Text("F1   S E C T I O N",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 228, 228, 228),
-                            fontSize: 25,
-                            fontWeight: FontWeight.w700,
-                          )),
-                    ),
-                    Container(
-                      color: Color.fromARGB(255, 0, 191, 255),
-                      height: 2,
-                      width: 180,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 20,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                SafeArea(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 40),
+                        child: Container(
+                            height: 50,
+                            width: 50,
+                            child: Image.asset(
+                              'lib/icons/SRMlogo.jpg',
+                            )),
                       ),
-                      child: Text("C S E - C O R E",
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 228, 228, 228),
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          )),
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-          SizedBox(
-            height: 80,
-          ),
-          SingleChildScrollView(
-            child: Center(
+                      Padding(
+                        padding: const EdgeInsets.only(top: 50, left: 0),
+                        child: Text("F1   S E C T I O N",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 228, 228, 228),
+                              fontSize: 25,
+                              fontWeight: FontWeight.w700,
+                            )),
+                      ),
+                      Container(
+                        color: Color.fromARGB(255, 0, 191, 255),
+                        height: 2,
+                        width: 180,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 20,
+                        ),
+                        child: Text("C S E - C O R E",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 228, 228, 228),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700,
+                            )),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 80,
+            ),
+            Center(
               child: Column(
                 children: [
                   InkWell(
@@ -104,6 +104,53 @@ class _HomepageState extends State<Homepage> {
                             padding: const EdgeInsets.only(left: 50),
                             child: Text(
                               "S T U D E N T S",
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 228, 228, 228),
+                                  fontWeight: FontWeight.w900),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 60,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Transferpage(),
+                          ));
+                    },
+                    child: Container(
+                      width: 360,
+                      height: 90,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 14, 25, 32),
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 228, 228, 228),
+                                  borderRadius: BorderRadius.circular(100)),
+                              child: Icon(
+                                Icons.flag,
+                                size: 30,
+                                color: const Color.fromARGB(255, 14, 25, 32),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 50),
+                            child: Text(
+                              "A C H I E V E M E N T S",
                               style: TextStyle(
                                   color: Color.fromARGB(255, 228, 228, 228),
                                   fontWeight: FontWeight.w900),
@@ -212,9 +259,9 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ],
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
