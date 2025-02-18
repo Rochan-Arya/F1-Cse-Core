@@ -43,9 +43,9 @@ The **F1CSE Core Project** is a Flutter-based mobile application designed to pro
 - **Notifications**: Push notifications for updates and reminders.
 
 ## Collaborators
-Rochan Arya V
-Meyyapan L
-Sriram R
+- Rochan Arya V
+- Meyyapan L
+- Sriram R
 
 ## Contributing
 We welcome contributions! To contribute:
