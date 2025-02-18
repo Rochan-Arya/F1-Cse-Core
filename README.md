@@ -1,4 +1,4 @@
-# F1CSE Core Project
+# F1 CSE Core Project
 
 ## Overview
 The **F1CSE Core Project** is a Flutter-based mobile application designed to provide a UI for student management. The app offers an intuitive interface for managing student records, attendance, and schedules effectively.
